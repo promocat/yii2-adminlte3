@@ -1,5 +1,5 @@
 <?php
-namespace promocat\adminlte3\widgets;
+namespace promocat\adminlte\widgets;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
@@ -7,7 +7,7 @@ use yii\helpers\Url;
 
 /**
  * Class Menu
- * @package promocat\adminlte3\widgets
+ * @package promocat\adminlte\widgets
  *
  * For example,
  *
@@ -91,6 +91,11 @@ class Menu extends \yii\widgets\Menu
         'role' => 'menu',
         'data-accordion' => 'false'
     ];
+
+    /**
+     * @var string The name of the menu. Used for dynamically registering menu items.
+     */
+    public $name = 'main';
 
     protected function renderItems($items)
     {

@@ -1,5 +1,5 @@
 <?php
-namespace promocat\adminlte3\widgets;
+namespace promocat\adminlte\widgets;
 
 use yii\base\ErrorException;
 use yii\bootstrap4\Widget;
@@ -7,7 +7,7 @@ use yii\helpers\Html;
 
 /**
  * Class Callout
- * @package promocat\adminlte3\widgets
+ * @package promocat\adminlte\widgets
  * @example
  * <?= Callout::widget(['type'=>'info', 'head'=>'head string', 'body'=>'body string']) ?>
  * Also possible

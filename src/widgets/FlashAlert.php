@@ -1,11 +1,12 @@
 <?php
-namespace promocat\adminlte3\widgets;
+namespace promocat\adminlte\widgets;
 
+use rmrevin\yii\fontawesome\FontAwesome;
 use yii\bootstrap4\Widget;
 
 /**
  * Class FlashAlert
- * @package promocat\adminlte3\widgets
+ * @package promocat\adminlte\widgets
  *
  * Alert widget renders a message from session flash. All flash messages are displayed
  * in the sequence they were assigned using setFlash. You can set message as following:
@@ -43,6 +44,11 @@ class FlashAlert extends Widget
      */
     public $closeButton = [];
 
+    /**
+     * @var bool show an alert header
+     */
+    public $showHeader = false;
+
     public function run()
     {
         $session = \Yii::$app->session;
@@ -53,7 +59,13 @@ class FlashAlert extends Widget
             if (!isset($this->alertTypes[$type])) {
                 continue;
             }
-
+            $header = '';
+            if ($this->showHeader) {
+                $header = Html::tag(
+                    'h4',
+                    (isset($alert['icon']) ? new FontAwesome($alert['icon']) . '&nbsp;' : '') . $alert['header']
+                );
+            }
             foreach ((array) $flash as $i => $message) {
                 echo \yii\bootstrap4\Alert::widget([
                     'body' => $message,

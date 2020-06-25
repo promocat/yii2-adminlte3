@@ -1,5 +1,5 @@
 <?php
-namespace promocat\adminlte3\widgets;
+namespace promocat\adminlte\widgets;
 
 use yii\base\ErrorException;
 use yii\bootstrap4\Widget;
