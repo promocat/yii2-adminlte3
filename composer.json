@@ -8,6 +8,10 @@
         {
             "name": "hail",
             "email": "hail812@163.com"
+        },
+        {
+            "name": "Promocat",
+            "email": "developer@promocat.com"
         }
     ],
     "require": {

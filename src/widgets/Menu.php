@@ -173,4 +173,10 @@ class Menu extends \yii\widgets\Menu
             '{target}' => isset($item['target']) ? 'target="'.$item['target'].'"' : ''
         ]);
     }
+
+    public static function getEventName($menuName)
+    {
+        return 'menu.' . $menuName . '.register';
+    }
+
 }
