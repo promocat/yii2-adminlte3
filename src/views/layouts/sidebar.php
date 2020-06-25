@@ -22,7 +22,7 @@
         <nav class="mt-2">
 
             <?php
-            echo \promocat\adminlte3\widgets\Menu::widget([
+            echo \promocat\adminlte\widgets\Menu::widget([
                 'items' => [
                     [
                         'label' => 'Starter Pages',

@@ -1,5 +1,5 @@
 <?php
-namespace promocat\adminlte3\assets;
+namespace promocat\adminlte\assets;
 
 use yii\web\AssetBundle;
 

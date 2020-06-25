@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "promocat\\adminlte3\\": "src"
+            "promocat\\adminlte\\": "src"
         }
     }
 }

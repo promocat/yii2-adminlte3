@@ -1,5 +1,5 @@
 <?php
-namespace promocat\adminlte3\assets;
+namespace promocat\adminlte\assets;
 
 use yii\web\AssetBundle;
 
@@ -8,7 +8,7 @@ class PluginAsset extends AssetBundle
     public $sourcePath = '@vendor/almasaeed2010/adminlte/plugins';
 
     public $depends = [
-        'promocat\adminlte3\assets\AdminLteAsset'
+        'promocat\adminlte\assets\AdminLteAsset'
     ];
 
     public static $pluginMap = [
