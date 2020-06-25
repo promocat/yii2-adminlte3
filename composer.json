@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "hail812\\adminlte3\\": "src"
+            "promocat\\adminlte3\\": "src"
         }
     }
 }
